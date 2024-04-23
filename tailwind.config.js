@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-poppins)"],
-        mono: ["var(--font-libre-baskerville)"],
+        libre: [`'${libre.variable}'`, "sans"],
+        poppins: [`'${poppins.variable}'`, "sans"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
