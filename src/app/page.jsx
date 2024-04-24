@@ -9,8 +9,10 @@ export default async function Home() {
     <main>
       <h1 className={libre.className}>Product name</h1>
       <p>Welcome to our web accessibility project! We are using Next.js to create a web application that demonstrates the importance of accessibility and how it aligns with the Web Content Accessibility Guidelines (WCAG) 2.1. By inputting a website URL, users can generate a report highlighting any accessibility issues found, helping website owners and developers ensure their sites are usable by all.</p>
-      <input type="url"></input>
-      <input type="submit" value="Check"></input>
+      <form action="/report">
+        <input type="url"></input>
+        <input type="submit" value="Check"></input>
+      </form>
     </main>
   );
 }
