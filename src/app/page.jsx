@@ -1,4 +1,5 @@
 import { Poppins, Libre_Baskerville } from "next/font/google";
+import "./globals.css";
 
 const libre = Libre_Baskerville({ subsets: ["latin"], weight: "400" });
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
