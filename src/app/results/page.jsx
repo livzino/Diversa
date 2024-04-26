@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Grading from "../components/Grading";
 
 // Revalidate route every 30 minutes
 export const revalidate = 1800;
@@ -17,6 +18,7 @@ export default async function Page({ searchParams }) {
       {data.violations.map((violation) => {
         return <p>{violation.description}</p>;
       })}
+      <Grading />
       <Image alt={data.url} src={data.screenshot.url} width={data.screenshot.width} height={data.screenshot.height} />
     </main>
   );

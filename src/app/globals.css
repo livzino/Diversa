@@ -30,10 +30,9 @@
   --moderate: 50%;
   --minor: 25%;
 
-  --score: 0;
+  --score: 100;
 
   --color: colormix(in oklab, red var(--severity, 0%), lime);
-
 }
 
 @media (prefers-color-scheme: dark) {

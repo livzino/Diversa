@@ -1,6 +1,4 @@
-import "./globals.css";
-
-export default async function Grading() {
+export default async function Grading({ data }) {
   const violationsByImpact = Object.entries(Object.groupBy(data.violations, ({ impact }) => impact)).map(([title, violations]) => ({
     title,
     count: violations.length,
