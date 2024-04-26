@@ -1,6 +1,6 @@
 // Grading.jsx
 export default async function Grading(props) {
-  const violationsByImpact = Object.entries(Object.groupBy(props.violations, ({ impact }) => impact)).map(([title, violations]) => ({
+  const violationsByImpact = Object.entries(Object.groupBy(data.violations, ({ impact }) => impact)).map(([title, violations]) => ({
     title,
     count: violations.length,
     violations,
