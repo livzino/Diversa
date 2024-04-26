@@ -7,19 +7,33 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --colors-brand-beige-00: #fefefb;
-  --colors-brand-beige-10: #f7f6e8; /* Background */
+  --colors-brand-beige-10: #f7f6e8;
+  /* Background */
   --colors-brand-turquoise-00: #e6fafe;
   --colors-brand-turquoise-20: #b4f1fd;
-  --colors-brand-turquoise-50: #69e3fc; /* Brand */
-  --colors-brand-yellow-40: #ffea80; /* Brand */
+  --colors-brand-turquoise-50: #69e3fc;
+  /* Brand */
+  --colors-brand-yellow-40: #ffea80;
+  /* Brand */
   --colors-brand-yellow-100: #e5c000;
-  --colors-brand-orange-70: #ff7733; /* Brand */
+  --colors-brand-orange-70: #ff7733;
+  /* Brand */
   --colors-grey-00: #ffffff;
   --colors-grey-20: #cccccc;
   --colors-grey-40: #999999;
   --colors-grey-60: #666666;
   --colors-grey-80: #333333;
   --colors-grey-100: #000000;
+
+  --critical: 100%;
+  --serious: 75%;
+  --moderate: 50%;
+  --minor: 25%;
+
+  --score: 0;
+
+  --color: colormix(in oklab, red var(--severity, 0%), lime);
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,4 +53,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+span {
+  border: 1px solid var(--color);
+  background: colormix(in oklab, red var(--severity, 15%), transparent);
 }
