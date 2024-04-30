@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import { score } from "../components/Grading";
 import "../globals.css";
 
 // Revalidate route every 30 minutes
@@ -11,6 +11,8 @@ export default async function Page({ searchParams }) {
   const response = await fetch(`https://mmd-a11y-api.vercel.app/api/scan?${params.toString()}`);
   const data = await response.json();
   console.log(data);
+
+  const [scoreValue, major, moderate, minor] = score(data);
 
   return (
     <main className="App">
@@ -26,7 +28,12 @@ export default async function Page({ searchParams }) {
         <Image alt={data.url} src={data.screenshot.url} width={data.screenshot.width} height={data.screenshot.height} />
       </div>
 
-      <div className="dataCard categoryCard"></div>
+      <div className="dataCard categoryCard">
+        <p>Score: {scoreValue}%</p>
+        <p>Major: {major.length}</p>
+        <p>Moderate: {moderate.length}</p>
+        <p>Minor: {minor.length}</p>
+      </div>
     </main>
   );
 }
