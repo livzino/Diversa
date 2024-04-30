@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import React from "react";
+import "../globals.css";
 
 // Revalidate route every 30 minutes
 export const revalidate = 1800;
@@ -13,14 +13,20 @@ export default async function Page({ searchParams }) {
   console.log(data);
 
   return (
-    <main>
-      <h1>Report for {data.url}</h1>
-      <p>Found {data.violations.length} issues</p>
-      {/*     {data.violations.map((violation) => {
-        return <p key={data}>{violation.description}</p>;
-      })}
- */}
-      <Image alt={data.url} src={data.screenshot.url} width={data.screenshot.width} height={data.screenshot.height} />
+    <main className="App">
+      <div className="dataCard revenueCard">
+        <h1>Report for {data.url}</h1>
+        <p>Found {data.violations.length} issues</p>
+        {data.violations.map((violation) => {
+          return <p key={data}>{violation.impact}</p>;
+        })}
+      </div>
+
+      <div className="dataCard customerCard">
+        <Image alt={data.url} src={data.screenshot.url} width={data.screenshot.width} height={data.screenshot.height} />
+      </div>
+
+      <div className="dataCard categoryCard"></div>
     </main>
   );
 }
