@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { score } from "../components/Grading";
 import "../globals.css";
+import notfound from "../not_found.jsx";
 
 // Revalidate route every 30 minutes
 export const revalidate = 1800;
@@ -9,7 +10,10 @@ export default async function Page({ searchParams }) {
   const params = new URLSearchParams(searchParams);
 
   const response = await fetch(`https://mmd-a11y-api.vercel.app/api/scan?${params.toString()}`);
+
   const data = await response.json();
+  if (response.status !== 200) return notfound();
+
   console.log(data);
 
   const [scoreValue, major, moderate, minor] = score(data);
