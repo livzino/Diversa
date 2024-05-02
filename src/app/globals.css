@@ -95,7 +95,6 @@ html img {
   padding: 1em;
 }
 
-
 .textCard {
   width: 92%;
 }
@@ -142,7 +141,6 @@ html img {
   font-size: 16px;
 }
 
-
 .listTitle {
   font-weight: 900;
 }
@@ -151,7 +149,6 @@ html img {
   width: 30%;
   height: auto;
 }
-
 
 /* FORSIDE */
 .diversa {
@@ -175,7 +172,7 @@ html img {
   border-radius: 30px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
   border: 4px solid rgb(246, 246, 246);
 }
 
@@ -260,6 +257,15 @@ body {
   border: 2px solid rgb(76, 76, 76);
 }
 
+.regler {
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid rgb(76, 76, 76);
+  margin-left: 10px;
+}
+
 body {
   background: rgb(106, 106, 106);
 }
@@ -294,4 +300,19 @@ img {
 
 .loading-title {
   font-size: 2rem;
+}
+
+/********************  Header  **************************/
+
+.navheader {
+  background-color: rgba(206, 206, 208, 0.331);
+  padding: 5px;
+  border-radius: 50px;
+
+  margin-top: 20px;
+  margin-left: 50px;
+
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
 }

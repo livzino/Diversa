@@ -3,6 +3,7 @@ import Image from "next/image";
 import { score } from "../components/Grading";
 import notfound from "../not_found.jsx";
 import { Poppins, Libre_Baskerville } from "next/font/google";
+import React from "react";
 
 // Revalidate route every 30 minutes
 export const revalidate = 1800;
