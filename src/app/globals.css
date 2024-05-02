@@ -295,3 +295,18 @@ img {
 .loading-title {
   font-size: 2rem;
 }
+
+/* RULES */
+
+.h1rules {
+  font-size: 3rem;
+
+  text-align: center;
+  padding: 0;
+  border-bottom: 2px solid rgb(25, 25, 25);
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  color: rgb(25, 25, 25);
+}
