@@ -334,3 +334,45 @@ img {
 }
 
 /********************  ACCORDION  **************************/
+
+.szh-accordion {
+  max-width: 800px;
+  margin-left: 250px;
+}
+
+.szh-accordion,
+.szh-accordion__item-btn {
+  margin-top: 20px;
+  position: relative;
+}
+
+.szh-accordion__item-btn {
+  background-color: rgb(205, 204, 204);
+  color: rgb(24, 24, 25);
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid rgb(49, 48, 48);
+  border-radius: 0.5em;
+  padding: 8px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.accordion .szh-accordion__item-btn .szh-accordion__item-heading:before {
+  content: '▶';
+  font-size: 1.5rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.szh-accordion__item-panel {
+  background-color: rgb(205, 204, 204);
+  padding: 10px 20px;
+  padding-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  border-radius: 20px;
+}
