@@ -1,4 +1,4 @@
-import "../globals.css";
+/* import "../globals.css";
 import { Poppins, Libre_Baskerville } from "next/font/google";
 
 const libre = Libre_Baskerville({ subsets: ["latin"], weight: "400" });
@@ -15,5 +15,39 @@ export default async function Home() {
         <input type="submit" value="Check" className="check"></input>
       </form>
     </main>
+  );
+}
+ */
+
+import Link from "next/link";
+
+export default async function Rules() {
+  const url = "https://dequeuniversity.com/rules/axe/4.9";
+  const res = await fetch(url);
+
+  const dogs = await res.json();
+
+  console.log(dogs);
+
+  return (
+    <nav className="bg-black text-white p-2">
+      <ul className="md:flex gap-2">
+        <li>
+          <Link href={"/"} prefetch={false}>
+            Home
+          </Link>
+        </li>
+        {dogs.map((dog) => {
+          const { id, description, impact, slug } = dog;
+          return (
+            <li key={slug}>
+              <Link href={`/${slug}`} prefetch={false}>
+                {name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </nav>
   );
 }
