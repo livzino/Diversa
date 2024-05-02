@@ -2,6 +2,7 @@ import Image from "next/image";
 import { score } from "../components/Grading";
 import "../globals.css";
 import notfound from "../not_found.jsx";
+import fejl from "../fejl.jsx";
 
 // Revalidate route every 30 minutes
 export const revalidate = 1800;
@@ -13,6 +14,7 @@ export default async function Page({ searchParams }) {
 
   const data = await response.json();
   if (response.status !== 200) return notfound();
+  if (data !== 200) return errorPage();
 
   console.log(data);
 
