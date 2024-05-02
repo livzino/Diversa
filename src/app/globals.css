@@ -60,7 +60,6 @@ body {
 }
  */
 
-
 .App {
   height: 100vh;
   width: 100%;
@@ -94,10 +93,109 @@ body {
 .categoryCard {
   width: 40%;
   height: 20rem;
-
 }
 
 img {
   width: 100%;
   height: auto;
+}
+.diversa {
+  font-size: 35px;
+  margin-left: 15px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.536);
+  text-align: left;
+  margin-top: 10px;
+}
+
+.notbutton {
+  background: black;
+}
+.main {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.21);
+  padding: 20px;
+  padding-bottom: 100px;
+  border-radius: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  border: 4px solid rgb(246, 246, 246);
+}
+.h1not {
+  font-size: 100px;
+  letter-spacing: 30px;
+
+  padding: 0;
+  border-bottom: 2px solid white;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 30px;
+}
+.h2not {
+  margin-top: 0;
+}
+.pte {
+  padding-bottom: 15px;
+}
+.notbutn {
+  margin: 20px;
+  background: rgb(205, 204, 204);
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgb(24, 24, 25);
+  border: 2px solid rgb(49, 48, 48);
+}
+.h1page {
+  font-size: 50px;
+  letter-spacing: 30px;
+  text-align: center;
+  padding: 0;
+  border-bottom: 2px solid rgb(25, 25, 25);
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  color: rgb(25, 25, 25);
+}
+body {
+  background: rgb(134, 134, 134);
+}
+
+.ppage {
+  margin-left: 150px;
+  margin-right: 150px;
+  color: rgb(25, 25, 25);
+}
+
+.pagemain {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.21);
+  padding: 20px;
+  padding-bottom: 100px;
+  border-radius: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 30px;
+  border: 4px solid rgb(246, 246, 246);
+}
+
+.url {
+  margin: 20px;
+  border: 1px solid rgb(246, 246, 246);
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  background: grey;
+}
+.check {
+  padding: 5px;
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid rgb(76, 76, 76);
+}
+body {
+  background: rgb(106, 106, 106);
 }
