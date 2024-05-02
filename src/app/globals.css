@@ -317,6 +317,53 @@ img {
   color: rgb(25, 25, 25);
 }
 
+
+
+.accordion {
+  max-width: 800px;
+}
+
+.accordion .content-box {
+  margin: 10px 20px;
+  position: relative;
+}
+
+.accordion .content-box .label:before {
+  content: '▶';
+  font-size: 1.5rem;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordion .content-box.active .label:before {
+  content: '▼';
+}
+
+.accordion .content-box .label {
+  background-color: #2694af;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.accordion .content-box .content {
+  background-color: #ffffff;
+  height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  transition: height 0.5s ease,
+    padding 0.5s ease;
+}
+
+.accordion .content-box.active .content {
+  height: 150px;
+  padding: 10px;
+}
+
 /********************  Header  **************************/
 
 .navheader {
