@@ -25,7 +25,7 @@ export default async function Page({ searchParams }) {
   return (
     <main className="App">
       <div className="card textCard">
-        <h1 className={libre.className}>Report for {data.url}</h1>
+        <h1 className={`${libre.className} reportTitle`}>Report for {data.url}</h1>
         {/*  <p>Found {data.violations.length} issues</p> */}
         {data.violations.map((violation) => {
           let color;
@@ -73,10 +73,7 @@ export default async function Page({ searchParams }) {
             return <Image className="badge" alt="N/A" src="/assets/none.png" width={50} height={50} />;
           }
         })()}{" "}
-        {/*   <p>Major: {major.length}</p>
-        <p>Moderate: {moderate.length}</p>
-        <p>Minor: {minor.length}</p> */}
-        <button className="btn">Grading guidelines</button>
+        <button className={`${poppins.className} btn`}>Grading guidelines</button>
       </div>
     </main>
   );

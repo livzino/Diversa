@@ -4,6 +4,7 @@ import { Poppins, Libre_Baskerville } from "next/font/google";
 import "../globals.css";
 
 import { MagnifyingGlass } from "react-loader-spinner";
+
 const libre = Libre_Baskerville({ subsets: ["latin"], weight: "400" });
 
 export default function Loading() {

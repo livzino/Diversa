@@ -73,12 +73,28 @@ html img {
   color: #000000;
 }
 
+.reportTitle {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  padding: 0;
+  border-bottom: 2px solid rgb(25, 25, 25);
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  color: rgb(25, 25, 25);
+  white-space: nowrap;
+}
+
 .card {
-  background-color: #efefef;
+  background-color: rgba(255, 255, 255, 0.21);
   border-radius: 0.5em;
+  border: 4px solid rgb(246, 246, 246);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 1em;
 }
+
 
 .textCard {
   width: 92%;
@@ -109,21 +125,23 @@ html img {
   width: 40%;
   height: 20rem;
 }
+
 .gradingCard p {
   font-size: 1.5rem;
 }
 
 .btn {
-  background-color: #000000;
-  border: none;
-  border-radius: 0.5em;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+  background-color: rgb(205, 204, 204);
+  color: rgb(24, 24, 25);
   text-decoration: none;
+  text-align: center;
+  border: 2px solid rgb(49, 48, 48);
+  border-radius: 0.5em;
+  padding: 8px;
   display: inline-block;
   font-size: 16px;
 }
+
 
 .listTitle {
   font-weight: 900;
@@ -133,6 +151,9 @@ html img {
   width: 30%;
   height: auto;
 }
+
+
+/* FORSIDE */
 .diversa {
   font-size: 35px;
   margin-left: 15px;
@@ -145,6 +166,7 @@ html img {
 .notbutton {
   background: black;
 }
+
 .main {
   text-align: center;
   background: rgba(255, 255, 255, 0.21);
@@ -156,6 +178,7 @@ html img {
   margin-top: 30px;
   border: 4px solid rgb(246, 246, 246);
 }
+
 .h1not {
   font-size: 100px;
   letter-spacing: 30px;
@@ -166,12 +189,15 @@ html img {
   margin-right: 150px;
   margin-bottom: 30px;
 }
+
 .h2not {
   margin-top: 0;
 }
+
 .pte {
   padding-bottom: 15px;
 }
+
 .notbutn {
   margin: 20px;
   background: rgb(205, 204, 204);
@@ -181,6 +207,7 @@ html img {
   color: rgb(24, 24, 25);
   border: 2px solid rgb(49, 48, 48);
 }
+
 .h1page {
   font-size: 50px;
   letter-spacing: 30px;
@@ -193,6 +220,7 @@ html img {
   padding-bottom: 20px;
   color: rgb(25, 25, 25);
 }
+
 body {
   background: rgb(134, 134, 134);
 }
@@ -223,6 +251,7 @@ body {
   height: 30px;
   background: grey;
 }
+
 .check {
   padding: 5px;
   width: 80px;
@@ -230,6 +259,7 @@ body {
   border-radius: 10px;
   border: 2px solid rgb(76, 76, 76);
 }
+
 body {
   background: rgb(106, 106, 106);
 }
@@ -255,6 +285,7 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #1e1e1e;
 }
 
 .loading-wrapper {
