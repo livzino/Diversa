@@ -60,8 +60,7 @@ body {
 }
  */
 
-
-img {
+html img {
   width: 100%;
   height: auto;
 }
@@ -157,7 +156,6 @@ img {
 
 #loading {
   position: relative;
-  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -170,4 +168,8 @@ img {
 
 .loading-wrapper {
   text-align: center;
+}
+
+.loading-title {
+  font-size: 2rem;
 }
